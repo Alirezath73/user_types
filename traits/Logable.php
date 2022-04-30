@@ -6,11 +6,11 @@ trait Logable
 
     private function log()
     {
-        file_put_contents($this->path, $this->serialize(), FILE_APPEND);
+        file_put_contents($this->path, $this->serialize($this), FILE_APPEND);
     }
 
-    private function serialize()
+    private function serialize($data)
     {
-        return serialize($this);
+        return serialize($data);
     }
 }

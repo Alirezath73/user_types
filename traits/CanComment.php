@@ -2,8 +2,8 @@
 
 trait CanComment
 {
-    public function comment($post, $comment)
+    public function comment(Post $post, Comment $comment)
     {
-        return "$this->name set $comment->description on post $post->title";
+        return "$this->name set comment ($comment->description) on post $post->title";
     }
 }
