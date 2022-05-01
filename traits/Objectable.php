@@ -2,7 +2,7 @@
 
 trait Objectable
 {
-    private static $listOfObjects = [];
+    protected static $listOfObjects = [];
     
     public function objects()
     {

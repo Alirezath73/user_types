@@ -2,8 +2,10 @@
 
 trait CanArchive
 {
-    public function archive()
+    private function canArchive($user)
     {
-        return 'i can archive';
+        if (!in_array('can_archive', $user->access)) {
+            throw new Exception;
+        }
     }
 }

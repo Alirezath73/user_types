@@ -2,5 +2,14 @@
 
 class SilverUser extends User
 {
-    use CanComment, CanLike;
+    protected $access = [
+        'can_comment', 'can_like',
+    ];
+
+    protected $name;
+
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
 }

@@ -2,8 +2,10 @@
 
 trait CanComment
 {
-    public function comment(Post $post, Comment $comment)
+    private function canComment($user)
     {
-        return "$this->name set comment ($comment->description) on post $post->title";
+        if (!in_array('can_comment', $user->access)) {
+            throw new Exception;
+        }
     }
 }

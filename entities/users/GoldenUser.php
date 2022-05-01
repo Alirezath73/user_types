@@ -2,5 +2,14 @@
 
 class GoldenUser extends User
 {
-    use CanComment, CanLike, CanArchive;
+    protected $access = [
+        'can_comment', 'can_like', 'can_archive'
+    ];
+
+    protected $name;
+
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
 }

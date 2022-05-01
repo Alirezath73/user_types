@@ -2,8 +2,10 @@
 
 trait CanLike
 {
-    public function like()
+    private function canLike($user)
     {
-        return 'i can like';
+        if (!in_array('can_like', $user->access)) {
+            throw new Exception;
+        }
     }
 }

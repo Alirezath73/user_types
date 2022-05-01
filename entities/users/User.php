@@ -1,15 +1,36 @@
 <?php
 
-class User
+abstract class User
 {
-    use Objectable;
+    use CanComment, CanLike, CanArchive;
 
-    protected $name;
-
-    public function __construct($name)
+    public function comment(Post $post, Comment $comment)
     {
-        $this->name = $name;
+        try {
+            $this->canComment($this);
+            return "$this->name set comment ($comment->description) on post $post->title";
+        } catch (Exception $e) {
+            die('you don\'t have access!');
+        }
+    }
 
-        static::$listOfObjects[] = $this;
+    public function archive(Post $post)
+    {
+        try {
+            $this->canArchive($this);
+            return "$this->name archive post $post->title";
+        } catch (Exception $e) {
+            die('you don\'t have access!');
+        }
+    }
+
+    public function like(Post $post)
+    {
+        try {
+            $this->canLike($this);
+            return "$this->name like post $post->title";
+        } catch (Exception $e) {
+            die('you don\'t have access!');
+        }
     }
 }
