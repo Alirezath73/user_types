@@ -10,7 +10,7 @@ abstract class User
             $this->canComment($this);
             return "$this->name set comment ($comment->description) on post $post->title";
         } catch (Exception $e) {
-            die('you don\'t have access!');
+            die($e->getMessage());
         }
     }
 
@@ -20,7 +20,7 @@ abstract class User
             $this->canArchive($this);
             return "$this->name archive post $post->title";
         } catch (Exception $e) {
-            die('you don\'t have access!');
+            die($e->getMessage());
         }
     }
 
@@ -30,7 +30,7 @@ abstract class User
             $this->canLike($this);
             return "$this->name like post $post->title";
         } catch (Exception $e) {
-            die('you don\'t have access!');
+            die($e->getMessage());
         }
     }
 }

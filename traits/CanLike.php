@@ -5,7 +5,7 @@ trait CanLike
     private function canLike($user)
     {
         if (!in_array('can_like', $user->access)) {
-            throw new Exception;
+            throw new Exception('you don\'t have access!');
         }
     }
 }

@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b70a3a5c-6960-4a69-be58-25a685182525" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/entities/users/GoldenUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/entities/users/GoldenUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/users/NormalUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/entities/users/NormalUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/users/SilverUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/entities/users/SilverUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/users/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/entities/users/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traits/CanArchive.php" beforeDir="false" afterPath="$PROJECT_DIR$/traits/CanArchive.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traits/CanComment.php" beforeDir="false" afterPath="$PROJECT_DIR$/traits/CanComment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traits/CanLike.php" beforeDir="false" afterPath="$PROJECT_DIR$/traits/CanLike.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traits/Objectable.php" beforeDir="false" afterPath="$PROJECT_DIR$/traits/Objectable.php" afterDir="false" />
-    </list>
+    <list default="true" id="b70a3a5c-6960-4a69-be58-25a685182525" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +31,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Alirezath73/user_types" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -68,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651312349297</updated>
       <workItem from="1651312350366" duration="2928000" />
-      <workItem from="1651380859399" duration="7825000" />
+      <workItem from="1651380859399" duration="7958000" />
     </task>
     <servers />
   </component>
